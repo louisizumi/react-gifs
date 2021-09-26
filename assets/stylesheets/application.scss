@@ -39,5 +39,7 @@ body {
 }
 
 .gif-list {
+  column-count: 2;
+  column-gap: 5px;
   height: 100vh;
 }

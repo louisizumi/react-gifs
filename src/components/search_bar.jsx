@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 
-class searchBar extends Component {
+class SearchBar extends Component {
+  handleChange = (e) => {
+    this.props.search(e.target.value);
+  }
+
   render() {
-    return (<input type="text" class="form-control form-search" value="pepe" />);
+    return (
+      <input type="text" className="form-control form-search" placeholder="Search for gifs..." onChange={this.handleChange} />
+    );
   }
 }
 
-export default searchBar;
+export default SearchBar;
