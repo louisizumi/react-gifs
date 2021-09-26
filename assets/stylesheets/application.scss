@@ -1,6 +1,3 @@
-@import url(./components/gif_list.scss);
-@import url(./components/selected_gif.scss);
-
 body {
   font-family: Helvetica;
 }
@@ -23,6 +20,24 @@ body {
   width: 60vw;
 }
 
+.selected-gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  .gif {
+    width: 80%;
+    height: 80%;
+    object-position: center;
+    object-fit: cover;
+  }
+}
+
 .right {
   width: 40vw;
+}
+
+.gif-list {
+  height: 100vh;
 }

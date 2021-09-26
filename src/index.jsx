@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
+import SearchBar from './components/search_bar';
+import Gif from './components/gif';
+import GifList from './components/gif_list';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,14 +21,14 @@ class App extends Component {
     return (
       <div>
         <div className="left">
-          <input type="text" class="form-control form-search" value="pepe"></input>
+          <SearchBar />
           <div className="selected-gif">
-            
+            <Gif id="28GHfhGFWpFgsQB4wR" />
           </div>
         </div>
         <div className="right">
           <div className="gif-list">
-            
+            <GifList />
           </div>
         </div>
       </div>

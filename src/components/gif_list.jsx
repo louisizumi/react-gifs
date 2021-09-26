@@ -1,12 +1,12 @@
 import Component from 'react';
 
-class gifList extends Component {
+class GifList extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-
+    
   }
 }
 

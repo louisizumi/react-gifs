@@ -1,12 +1,8 @@
-import Component from 'react';
+import React, { Component } from 'react';
 
 class searchBar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-
+    return (<input type="text" class="form-control form-search" value="pepe" />);
   }
 }
 
