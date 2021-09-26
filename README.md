@@ -1,30 +1,15 @@
-# react-boilerplate
+### Giphy Search App
 
-Simple react starter with the following config:
+The goal of this challenge was to re-code from scratch the Giphy Search app.
 
-- React, ReactDOM
-- Webpack 4
-- Babel with es2015 and react presets
-- Bootstrap (css only, loaded from a cdn in `index.html`)
-- work with `.js` or `.jsx` files
-- main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
+#### 1. Setup
 
-## Scripts
+The challenge used the Le Wagon [React boilerplate](https://github.com/lewagon/react-boilerplate):
 
-To start the local Webpack Dev Server (usually on port `8080`):
+#### 2. Features
 
-```bash
-yarn start
-```
+1. When a user types a query, the list of Gifs displays the 10 first results the `giphy-api` returns.
+1. When a user clicks on a gif from the list, it should appear on the main scene on the left.
+1. (Optional) When a user focuses in / out of the input, find a nice way to twist the UI on the left part (opacity, background-color, border...) to show your user he's in / out of the input!
 
-To lint all JavaScript files in the `src` folder:
-
-```bash
-yarn lint
-```
-
-To build and deploy your app to `gh-pages` branch on the GitHub repo:
-
-```bash
-yarn deploy
-```
+👉 Here's [a live example](https://lewagon.github.io/react-giphy/) of the [solution repository](https://github.com/lewagon/react-giphy).
