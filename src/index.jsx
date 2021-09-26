@@ -30,6 +30,12 @@ class App extends Component {
     });
   }
 
+  selectGif(id) {
+    this.setState({
+      selectedGifId: id
+    });
+  }
+
   render() {
     const { gifs, selectedGifId } = this.state;
     return (

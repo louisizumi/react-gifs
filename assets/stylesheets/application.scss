@@ -1,12 +1,16 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: Helvetica;
 }
 
 #root {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
 }
 
 #root > div {
@@ -20,6 +24,21 @@ body {
   width: 60vw;
 }
 
+.search-bar {
+  border: none;
+  border-bottom: 4px solid white;
+  margin: 16px;
+  padding: 8px 16px;
+  line-height: 32px;
+  font-size: 24px;
+  background-color: black;
+  color: white;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 .selected-gif {
   display: flex;
   justify-content: center;
@@ -27,19 +46,24 @@ body {
   flex: 1;
 
   .gif {
-    width: 80%;
-    height: 80%;
-    object-position: center;
-    object-fit: cover;
+    width: 60% !important;
   }
+}
+
+.gif {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 .right {
   width: 40vw;
+  overflow-y: scroll;
 }
 
 .gif-list {
   column-count: 2;
   column-gap: 5px;
-  height: 100vh;
+  overflow-x: hidden;
+  text-align: center;
 }
