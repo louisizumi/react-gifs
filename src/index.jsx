@@ -15,9 +15,19 @@ class App extends Component {
 
   render() {
     return (
-      <p>
-        Hello, World
-      </p>
+      <div>
+        <div className="left">
+          <input type="text" class="form-control form-search" value="pepe"></input>
+          <div className="selected-gif">
+            
+          </div>
+        </div>
+        <div className="right">
+          <div className="gif-list">
+            
+          </div>
+        </div>
+      </div>
     );
   } 
 };
