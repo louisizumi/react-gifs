@@ -2,6 +2,9 @@
 
 The goal of this challenge was to re-code from scratch the Giphy Search app.
 
+Here's how it looks:
+![gif](./react-gifs.gif)
+
 #### 1. Setup
 
 The challenge used the Le Wagon [React boilerplate](https://github.com/lewagon/react-boilerplate):
