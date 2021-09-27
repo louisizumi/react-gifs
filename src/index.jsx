@@ -14,7 +14,7 @@ class App extends Component {
 
     this.state = {
       gifs: [],
-      selectedGifId: "28GHfhGFWpFgsQB4wR"
+      selectedGifId: null
     };
 
     this.search("hello");
@@ -50,7 +50,7 @@ class App extends Component {
       </div>
     );
   } 
-};
+}
 
 const root = document.getElementById('root');
 if (root) {
