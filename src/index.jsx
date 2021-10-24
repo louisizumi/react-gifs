@@ -25,7 +25,6 @@ class App extends Component {
       q: query,
       rating: 'g'
     }, (error, result) => {
-      console.log(result)
       this.setState({ gifs: result.data });
     });
   }
@@ -49,7 +48,7 @@ class App extends Component {
         </div>
       </div>
     );
-  } 
+  }
 }
 
 const root = document.getElementById('root');
